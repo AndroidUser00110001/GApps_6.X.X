@@ -19,6 +19,7 @@ echo "AndroidUser00110001 GApps";
 APPDIRS="facelock/arm/app/FaceLock
          googletts/arm/app/GoogleTTS
          googletts/x86/app/GoogleTTS
+         googlehome/app/GoogleHome
          latinimegoogle/arm/app/LatinImeGoogle
          latinimegoogle/arm64/app/LatinImeGoogle
          prebuiltbugle/arm/app/PrebuiltBugle
@@ -36,7 +37,6 @@ APPDIRS="facelock/arm/app/FaceLock
          system/app/ChromeBookmarksSyncAdapter
          system/app/GoogleCalendarSyncAdapter
          system/app/GoogleContactsSyncAdapter
-         system/app/GoogleHome
          system/app/PrebuiltExchange3Google
          system/priv-app/ConfigUpdater
          system/priv-app/GoogleBackupTransport

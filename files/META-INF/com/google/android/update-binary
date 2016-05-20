@@ -129,8 +129,9 @@ unzip -o "$zipfile" "system/*" -d /
 unzip -o "$zipfile" "facelock/*" -d /tmp
 set_perm 0 0 0777 /tmp/facelock/facelock.sh
 /tmp/facelock/facelock.sh
-set_perm 0 0 0777 /tmp/googlehome/facelock.sh
-/tmp/facelock/googlehome.sh
+unzip -o "$zipfile" "googlehome/*" -d /tmp
+set_perm 0 0 0777 /tmp/googlehome/googlehome.sh
+/tmp/googlehome/googlehome.sh
 unzip -o "$zipfile" "googletts/*" -d /tmp
 set_perm 0 0 0777 /tmp/googletts/googletts.sh
 /tmp/googletts/googletts.sh
