@@ -47,6 +47,5 @@ elif (echo "$arch" | grep -qi "arm64"); then
   ln -sfn /system/lib64/libjni_delight4decoder.so /system/app/LatinIME/lib/arm64/libjni_delight4decoder.so
 fi
 
-
 # Cleanup
 rm -rf /tmp/libs
