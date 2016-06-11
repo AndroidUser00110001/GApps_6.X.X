@@ -24,7 +24,7 @@ arch=$(file_getprop $rom_build_prop "ro.product.cpu.abi=")
 # GoogleTTS
 if (echo "$arch" | grep -qi "x86"); then
   cp -rf $tmp_path/googletts/x86/* /system
-else
+elif (echo "$arch" | grep -qi "arm"); then
   cp -rf $tmp_path/googletts/arm/* /system
 fi
 
