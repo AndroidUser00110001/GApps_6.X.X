@@ -21,6 +21,8 @@ rom_build_prop=/system/build.prop
 
 arch=$(file_getprop $rom_build_prop "ro.product.cpu.abi=")
 
+build_char=$(file_getprop $rom_build_prop "ro.build.characteristics")
+
 # PrebuiltBugle
 if (echo "$arch" | grep -qi "armeabi"); then
   cp -rf $tmp_path/prebuiltbugle/arm/* /system
@@ -28,5 +30,10 @@ elif (echo "$arch" | grep -qi "arm64"); then
   cp -rf $tmp_path/prebuiltbugle/arm64/* /system
 fi
 
+# Tablet doesn't need Messenger
+if (echo "$build_char" | grep -qi "tablet"); then
+  rm -rf /system/app/PrebuiltBugle
+fi
+
 # Cleanup
-rm -rf /tmp/googletts
+rm -rf /tmp/prebuiltbugle
