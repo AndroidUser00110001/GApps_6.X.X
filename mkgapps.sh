@@ -16,7 +16,8 @@
 echo "AndroidUser00110001 GApps";
 
 # Define paths && variables
-APPDIRS="facelock/arm/app/FaceLock
+APPDIRS="dialer/priv-app/Dialer
+         facelock/arm/app/FaceLock
          googletts/arm/app/GoogleTTS
          googletts/x86/app/GoogleTTS
          googlehome/app/GoogleHome
