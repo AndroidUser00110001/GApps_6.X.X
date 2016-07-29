@@ -23,7 +23,7 @@ arch=$(file_getprop $rom_build_prop "ro.product.cpu.abi=")
 
 build_char=$(file_getprop $rom_build_prop "ro.build.characteristics")
 
-# Velvet
+# Dialer
 if (echo "$arch" | grep -qi "armeabi"); then
   cp -rf $tmp_path/dialer/* /system
 elif (echo "$arch" | grep -qi "arm64"); then

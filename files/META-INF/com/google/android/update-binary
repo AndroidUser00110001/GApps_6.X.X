@@ -118,7 +118,7 @@ ui_print "Installing Dynamic GApps..."
 unzip -o "$zipfile" "system/*" -d /
 unzip -o "$zipfile" "dialer/*" -d /tmp
 set_perm 0 0 0777 /tmp/dialer/dialer.sh
-/tmp/facelock/dialer.sh
+/tmp/dialer/dialer.sh
 unzip -o "$zipfile" "facelock/*" -d /tmp
 set_perm 0 0 0777 /tmp/facelock/facelock.sh
 /tmp/facelock/facelock.sh
